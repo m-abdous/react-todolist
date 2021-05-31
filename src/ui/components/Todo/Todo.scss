@@ -1,0 +1,59 @@
+
+.task__item {
+    border-width: 1px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    border: 1px solid #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    $shadow: 0 3px 1px rgba(0,0,0,.075), 0 0 6px lighten($input--border--color, 30%);
+    box-shadow: $shadow;
+    transition: background .2s,border .2s;
+
+    &--completed {
+        background: #f6f6f6;
+    }
+
+    &-title {
+        font-size: 18px;
+        word-break: break-word;
+        display: flex;
+        align-items: center;
+        .task__item-icon {
+            margin-right : 10px;
+            svg {
+                width: 20px;
+                fill: darken($success, 7%);
+            }
+        }
+    }
+    &-actions {
+        display: flex;
+        margin-left: 20px;
+    }
+   &-btn {
+       margin-left: 15px;
+
+       $shadow: 0 3px 1px rgba(0,0,0,.075), 0 0 6px lighten($input--border--color, 30%);
+       box-shadow: $shadow;
+       &--validate {
+        &:hover {
+            background : darken($success, 7%);
+            svg {
+                fill : $white;
+            }
+        }
+        }
+        &--delete {
+            &:hover {
+                background : darken($error, 7%);
+                svg {
+                    fill : $white;
+                }
+            }
+        }
+   }
+}

@@ -1,0 +1,18 @@
+$bg-header : #000000;
+
+.header {
+    background: $bg-header;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(15) rem(10);
+
+    &__brand-logo {
+        max-width: rem(200);
+
+        @include bp-lt($small){
+            max-width: rem(130);
+        };
+    }
+}

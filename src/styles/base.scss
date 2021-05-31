@@ -1,0 +1,40 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $roboto;
+}
+
+main {
+    padding: rem(70) 0; 
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+}
+.container {
+    width: 100%;
+    max-width: $desktopL;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    
+    &--full {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+
+p {
+    @include typo(14px, 20px);
+    font-weight: normal
+}
+  
+h1 {
+    @include typo(28px, 52px);
+    font-weight: 100;
+    padding: rem(50) 0;
+}
+
+.sr-only{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}

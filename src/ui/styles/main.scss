@@ -1,0 +1,18 @@
+/* Components styles */
+@import '@components/Header/Header';
+@import '@components/Footer/Footer';
+@import '@components/Form/InputField/InputField';
+@import '@components/ToDo/ToDo';
+
+
+/* Container styles */
+@import '@containers/TodoForm/TodoForm';
+@import '@containers/TodoList/ToDoList';
+
+
+/* Layouts styles */
+@import "@layouts/MainLayout/MainLayout";
+
+
+/* Pages styles */
+@import "@pages/Home/Home";

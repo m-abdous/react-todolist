@@ -1,0 +1,23 @@
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: rem(20);
+    align-items: center;
+    border-top: 1px solid $black;
+    bottom:0px;
+    width:100%;
+    justify-content: center;
+    background : $white;
+
+    &__brand {
+        max-width: rem(30);
+        margin-right: 10px;
+    }
+
+    &__copyright {
+        font-size: rem(11);
+    }
+    
+}

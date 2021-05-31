@@ -1,0 +1,148 @@
+
+.field-content {
+    &__label {
+        display: block;
+        font-size: rem(16);
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    &__helper {
+        display: block;
+        color: #6f6e77;
+        font-size: .75rem;
+    }
+
+    &--error {  
+        input {
+            border-color: $error;
+            &:focus{
+                box-shadow: 0 0 0 1px #fff, 0 0 0 3px  $error;
+            }
+        }
+    }
+    
+    &__error {
+        color: $error;
+        padding: 7px 0 0 10px;
+        display: block;
+        font-size: .8rem;
+    }
+
+    &__input {
+
+        &--text {
+
+        }
+    }
+}
+
+// ========================================= //
+// inputs
+// ========================================= //
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea,
+select{
+    width: 100%;
+    border: solid;
+    border-color: $input--border--color;
+    border-width: #{$input--border--width}px;
+    height: rem($input--height);
+    padding: $input--padding;
+    background-color: $input--background;
+    border-radius: $input--raduis;
+    font-size: $input--fontSize;
+    @include placeholder-color(rgba(0,0,0,0.6), $input--fontSize);
+    &[disabled],
+    &[readonly]
+    {
+        background-color: $input--background_disabled;
+        opacity: 1;
+    }
+    &.success{
+        border-color: get-color('success');
+    }
+
+    &.primary{
+        border-color: get-color('primary');
+    }
+    &.secondary{
+        border-color: get-color('secondary');
+    }
+
+    &.warning{
+        border-color: get-color('warning');
+    }
+    &.error{
+        border-color: get-color('alert');
+    }
+    &:focus{
+
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px #186a69;
+        outline: 0; 
+
+    }
+
+    //Input sizing
+    &.input-lg{
+        height:  rem($input-height-large);
+    }
+
+    &.input-sm{
+        height:  rem($input-height-small);
+    }
+
+    &.input-xs{
+        height: rem($input-height-extra-small);
+    }
+}
+
+.button {
+    border-radius: 30px;
+    display: block;
+    padding: 10px 32px;
+    position: relative;
+    text-align: center;
+    transition: background .2s,border .2s;
+    font-size : 16px;
+    cursor : pointer;
+    &:hover {
+        background : darken(#186a69, 8%);
+    }
+    &:focus{
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px #186a69;
+        outline: 0; 
+    }
+    &--primary {
+        background: #186a69;
+        border: 1px solid #186a69;
+        color: #fff;
+    }
+    &--icon {
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        border: 0;
+        background: white;
+
+        svg  {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

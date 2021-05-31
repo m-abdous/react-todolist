@@ -1,0 +1,44 @@
+
+  
+  $label--color: $black;
+  $label--fontfamily: $roboto;
+  $clabel--fontfamily: $roboto;
+  $clabel--fontsize: rem(16);
+  $label--fontsize: rem(14);
+  $label--fontweight: 300;
+
+  // inputs
+  $input--border--color: #D9D4D4;
+  $input--border--width: 1;
+  $input--height: 40;
+  $input-height-base: 38;
+  $input-height-large:             57;
+  $input-height-small:             35;
+  $input-height-extra-small:       30;
+  $input--margin: 15;
+  $input--background: $white;
+  $input--background_disabled: #eee;
+  $input--raduis : 30px;
+  $input--fontSize : rem(14);
+  $input--padding:0   1rem;
+  $input--padding_icon:3rem;
+
+
+
+  // buttons
+  $button--height: 44;
+  $button--border--width: 0;
+  $button--border--type: solid;
+  $button--padding: 30;
+  $button--margin: 0;
+
+  $button--height-larg: 50;
+
+  $button--background: #276eb7;
+
+
+
+  // alert
+  $alert--color : $white;
+  $alert--color--alt : $black;
+  $alert--fontfamily : $roboto;

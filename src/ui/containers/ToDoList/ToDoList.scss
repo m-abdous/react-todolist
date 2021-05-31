@@ -1,0 +1,7 @@
+.tasks-content {
+    padding: rem(50) 0;
+    @include bp-gt($xmedium){
+        max-width : 60%;
+        margin: auto;
+    };
+}
